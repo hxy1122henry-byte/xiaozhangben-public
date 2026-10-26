@@ -1,0 +1,1 @@
+const {spawnSync}=require('child_process'),path=require('path');for(const name of ['sync-server.cjs','sync-client.cjs','accounts.cjs','accounts-client.cjs','public-preferences.cjs']){const r=spawnSync(process.execPath,[path.join(__dirname,name)],{stdio:'inherit'});if(r.status!==0)process.exit(r.status||1)}

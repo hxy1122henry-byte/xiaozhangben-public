@@ -1,0 +1,13 @@
+{
+  "name": "pocket-ledger-public",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Personal CNY/MYR offline ledger with Tailscale device sync",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node server.cjs",
+    "test": "node tests/run.cjs"
+  }
+}
